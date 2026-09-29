@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0px;
+}
+
+header{
+    height: 250px;
+    background-color: #ffb2e1;
+}
+
+nav{
+    margin-left: 50%;
+    margin-top: -30px;
+}
+
+.Hola{
+ height: 90px;
+ background-color: #ff0f83;
+ margin-bottom: 10px ;
+}
+
+section{
+    background-color: #fc92ad;
+    padding: 5px 0px;
+}
+
+article{
+    width: 30%;
+    height: 250px;
+    background-color: #7e0028;
+    margin: 40px 0px;
+    display: inline-block;
+}
+
+.ola{
+    margin-inline: 70px;
+}
+
+
+{
+    width: 30%;
+    height: 250px;
+    margin: 40px 0px;
+    background-color: #ed6a9a;
+}
+
