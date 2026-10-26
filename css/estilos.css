@@ -1,51 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face{
+    font-family: "Permanent Marker";
+    src: url("../font/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Libre Caslon";
+    src: url("../font/Libre_Caslon_Condensed/static/LibreCaslonCondensed-Regular.ttf");
 }
 
 body{
-    font-size: 0px;
+    font-family: "Libre Caslon", serif;
+    font-size: 20px;
 }
 
-header{
+h1{
+    font-family: "Permanent Marker", cursive;
+}
+
+h2{
+    font-family: "Libre Caslon", serif;
+}
+
+
+#inicio{
+    margin-top: 75px;
+}
+
+
+.logotipo{
+    width: 65px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-brand{
+    font-size: 24px;
+    color: black;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    color: rgb(209, 139, 223);
+}
+
+.nav-link:hover{
+    color: rgb(110, 21, 21);
+}
+
+#sobre-mi{
+    scroll-margin-top: 85px;
+}
+
+.foto-perfil{
+    width: 290px;
+    height: auto;
+}
+
+.btn-primary{
+    background-color: #8b3a55;
+    border-color: #8b3a55;
+}
+
+.btn-primary:hover{
+    background-color: #622538;
+    border-color: #622538;
+}
+
+#proyectos{
+    scroll-margin-top: 85px;
+}
+
+
+.card-img-top{
+    width: 100%;
     height: 250px;
-    background-color: #ffb2e1;
+    object-fit: cover;
 }
 
-nav{
-    margin-left: 50%;
-    margin-top: -30px;
+#hobbies{
+    background-color: #fff4f6;
+    scroll-margin-top: 85px;
 }
 
-.Hola{
- height: 90px;
- background-color: #ff0f83;
- margin-bottom: 10px ;
+.video-hobby{
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    background-color: black;
 }
 
-section{
-    background-color: #fc92ad;
-    padding: 5px 0px;
+#contacto{
+    margin-top: 75px;
 }
 
-article{
-    width: 30%;
-    height: 250px;
-    background-color: #7e0028;
-    margin: 40px 0px;
-    display: inline-block;
+#contacto h2{
+    color: #8b3a55;
+    margin-bottom: 20px;
 }
 
-.ola{
-    margin-inline: 70px;
+.btn-primary{
+    background-color: #8b3a55;
+    border-color: #8b3a55;
 }
 
-
-{
-    width: 30%;
-    height: 250px;
-    margin: 40px 0px;
-    background-color: #ed6a9a;
+.btn-primary:hover{
+    background-color: #622538;
+    border-color: #622538;
 }
 
+.nav-link{
+    color: #c979df;
+}
+
+.nav-link:hover{
+    color: #8b3a55;
+}

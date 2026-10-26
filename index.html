@@ -1,23 +1,225 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Nuevo</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
+    
+    <title>Mi portafolio personal</title>
 </head>
 <body>
-    <header></header>
-    <nav class="Hola"></nav>
-    <section> 
-        <article></article>
-        <article class="ola"></article>
-        <article></article>
-    </section>
 
-    <section id="Adios"></section>
-    <aside></aside>
+    <header class="navbar navbar-expand-lg bg-danger-subtle py-0 fixed-top">
+    <nav class="container">
+        <a class="navbar-brand" href="#inicio">
+          <img src="imagenes/logo.png" alt="Logo" class="d-inline-block align-text-middle logotipo">
+                Mi Portafolio
+        </a>
 
-    <footer></footer>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="#inicio">Inicio</a>
+                <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                <a class="nav-link" href="#proyectos">Proyectos</a>
+                <a class="nav-link" href="#hobbies">Hobbies</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+<section id="inicio" class="container py-5">
+    <h1 class="display-4 fw-bold text-center text-danger-emphasis">
+        Bienvenidos a mi portafolio
+    </h1>
+    <p class="text-center"> Conoce sobre mis estudios, mis proyectos y mis pasatiempos.</p>
+</section>
+
+
+<section id="sobre-mi" class="container py-5">
+    <div class="row">
+        <figure class="col-lg-6 col-md-10 offset-md-0">
+            <img src="imagenes/Perfil.png" alt="Fotografia personal" class="img-fluid rounded foto-perfil">
+        </figure>
+
+        <article class="col-lg-6 col-md-10 offset-md-0 text-center text-lg-start pt-lg-5">
+            <h1 class="display-4 fw-bold text-danger"> Sobre mí </h1>
+            <p> Soy una persona Responsable, Organizada, Creativa, Perfeccionista y comprometida con la tecnología, la electronica, los experimentos y el desarrollo de nuevos proyectos. </p>
+            <p id="parrafo" class="collapse d-lg-block"> Actualmente estudio Tecnologias de la informacion e innovacion digital, una carrera que hasta hora me ha permitido explorar mi creatividad mientras desarrollo nuevas habilidades que me permiten crecer tanto personal como profesionalmente.</p>
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#parrafo" role="button" aria-expanded="false" aria-controls="parrafo">
+                Leer más...
+            </a>
+        </article>
+    </div>
+</section>
+
+
+<section id="proyectos" class="container py-5">
+    <h1 class="display-4 fw-bold text-center text-danger"> Mis Proyectos </h1>
+    <div class="row">
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/Foto01_dron.jpeg" class="card-img-top" alt="Armando mi dron">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Armando mi Dron </h5>
+                    <p class="card-text text-center"> Proyecto relacionado con mi carrera de pilotaje de drones.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proy_electronica"> Ver proyecto </a>
+                </div>
+            </div>
+        </article>
+
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/Foto04_Pieza3d.jpeg" class="card-img-top" alt="Pinzas en 3D">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Pinzas en 3D </h5>
+                    <p class="card-text text-center"> Proyecto relacionado con mi dron, donde realicé una pinza en 3D. </p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proy_pinzas"> 
+                        Ver proyecto
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4 mb-3">
+            <div class="card">
+                <img src="imagenes/Foto05_Paisajemio.jpeg" class="card-img-top" alt="Fotografías con dron">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-center"> Fotografías con mi dron </h5>
+                    <p class="card-text text-center"> Fotografías y videos que capturo a través de mi dron.</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#proy_fotos">
+                        Ver proyecto
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+
+<!-- Modal- Armando mi Dron -->
+<div class="modal fade" id="proy_electronica" tabindex="-1" aria-labelledby="tituloDron" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="tituloDron"> Armando mi Dron </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p>En este proyecto trabajé con componentes electrónicos para realizar el armado de un dron.</p>
+                <p>Esta experiencia me permitió conocer mejor su funcionamiento y aprender sobre la integración de sus diferentes componentes.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Pinza 3D -->
+<div class="modal fade" id="proy_pinzas" tabindex="-1" aria-labelledby="tituloPinzas" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="tituloPinzas"> Pinzas en 3D </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p>En este proyecto realicé una pinza en 3D diseñada para integrarse con un dron de paqueteria </p>
+                <p>El objetivo fue explorar el diseño y funcionamiento de un mecanismo que pudiera sujetar objetos.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Fotografías con mi Dron -->
+<div class="modal fade" id="proy_fotos" tabindex="-1" aria-labelledby="tituloFotos" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 fw-bold" id="tituloFotos"> Fotografías con mi Dron </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+            </div>
+            <div class="modal-body">
+                <p> En este proyecto comparto algunas fotografías y videos que he capturado utilizando mi dron. </p>
+                <p> La fotografía aérea me permite explorar nuevas perspectivas y desarrollar mi creatividad. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="hobbies" class="container py-5">
+    <h1 class="display-4 fw-bold text-center text-danger"> Mis Hobbies </h1>
+    <div class="row py-4">
+        <article class="col-lg-6 text-center text-lg-start pt-lg-5">
+            <h2 class="fw-bold"> Mi pasión por el baile </h2>
+            <p class="fs-5"> Uno de mis pasatiempos favoritos es bailar. A través del baile puedo expresarme, divertirme y compartir momentos especiales con mi familia.</p>
+        </article>
+        <figure class="col-lg-6">
+            <video src="videos/Mihobby_01.m4v" class="w-100 rounded video-hobby" controls> </video>
+        </figure>
+    </div>
+
+     <div class="row py-4">
+    <figure class="col-lg-6">
+        <video src="videos/Mihobby_02.mp4" class="w-100 rounded video-hobby" controls> </video>
+    </figure>
+    <article class="col-lg-6 text-center text-lg-start pt-lg-5">
+        <h2 class="fw-bold">  Otro de mis bailes </h2>
+        <p class="fs-5"> Disfruto seguir practicando,aprendiendo nuevos movimientos y mejorando cada vez más. </p>
+    </article>
+</div>
+
+<div class="row py-4">
+    <article class="col-lg-6 text-center text-lg-start pt-lg-5">
+            <h2 class="fw-bold"> Bailando con mis hermanos</h2>
+            <p class="fs-5"> Me encanta bailar con mims hermanos, ir a competencias y presentaciones</p>
+        </article>
+        <figure class="col-lg-6">
+            <video src="videos/Mihobby_03.mp4" class="w-100 rounded" controls> </video>
+        </figure>
+    </div>
+</section>
+
+<div class="row py-5">
+    <h2 class="fw-bold text-center text-danger"> Mis canciones favoritas </h2>
+    <article class="col-lg-6 text-center py-4">
+        <h3> Mi primera cancion favorita</h3>
+        <audio controls class="w-100">
+            <source src="Audios/That Should Be Me(M4A_128K).m4a" type="audio/mpeg">
+        </audio>
+    </article>
+
+    <article class="col-lg-6 text-center py-4">
+        <h3>Segunda cancion que mas me gusta</h3>
+        <audio controls class="w-100">
+            <source src="Audios/LOUIS of LNGSHOT - _Good Girls_ Official Audio(M4A_128K).m4a" type="audio/mpeg">
+        </audio>
+    </article>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
+     
+<footer class="container-fluid bg-danger text-light text-center">
+   <p class="py-3 h5">copyright 2026 - Milagros del Pilar Carrillo Marquez</p>
+</footer>
+
 </html>

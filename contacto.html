@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mili Marquez">
+    <meta name="description" content="Pagina de contacto de mi portafolio personal">
+    <meta name="keywords" content="portafolio, contacto, proyectos, tecnologia">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon">
+    
+    <title>Contacto - Mi Portafolio</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg bg-danger-subtle py-0 fixed-top">
+        <nav class="container">
+            <a class="navbar-brand" href="index.html#inicio"> 
+                <img src="imagenes/logo.png" alt="Logo" class="d-inline-block align-text-middle logotipo"> 
+                Mi Portafolio 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="index.html#inicio"> Inicio </a>
+                    <a class="nav-link" href="index.html#sobre-mi"> Sobre mí </a>
+                    <a class="nav-link" href="index.html#proyectos"> Proyectos </a>
+                    <a class="nav-link" href="index.html#hobbies"> Hobbies </a>
+                    <a class="nav-link" href="contacto.html"> Contacto </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="contacto" class="container py-5">
+        <h1 class="display-4 fw-bold text-center text-danger"> Contáctame </h1>
+        <p class="fs-5 text-center"> ¿Te gustaría conocer más sobre mis proyectos? ¡Envíame un mensaje! </p>
+        <div class="row py-4">
+            <article class="col-lg-6 mb-4">
+                <h2 class="fw-bold"> Mándame un mensaje </h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label"> Nombre </label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label"> Correo electrónico </label>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label"> Mensaje </label>
+                        <textarea class="form-control" id="mensaje"name="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Enviar mensaje
+                    </button>
+                </form>
+            </article>
+            <article class="col-lg-6 mb-4">
+                <h2 class="fw-bold"> Mi ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.864151994416!2d-101.69776962495233!3d21.157803880523954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf471573b9c9%3A0x131d3a2e05f53779!2sPlaza%20Mayor!5e0!3m2!1ses-419!2smx!4v1792962495133!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </article>
+        </div>
+    </section>
+
+
+<footer class="container-fluid bg-danger text-light text-center">
+   <p class="py-3 h5">copyright 2026 - Milagros del Pilar Carrillo Marquez</p>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
